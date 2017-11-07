@@ -6,11 +6,12 @@ const app = express();
 app.use(express.static(path.join(__dirname,'dist')));
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname + 'dist/index.html'))
+  console.log("log index.js page, ", __dirname);
+  res.sendFile(path.join(__dirname + '/welcome.html'));
 });
 
-app.get('/welcome', (req, res) => {
-  res.send({ name: 'welcome page' });
+app.get('/demo1', (req, res) => {
+  res.sendFile(path.join(__dirname + '/dist/sample1.html'))
 });
 
 const PORT = process.env.PORT || 5000;
