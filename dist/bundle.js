@@ -37318,7 +37318,6 @@ var AddUser = function AddUser(props) {
   var newUserEmail = '';
   var newUserDoj = '';
   var newUserActive = '';
-  console.log('JJJJJ');
 
   var sendDataToParent = function sendDataToParent(event) {
     console.log(newUserDoj);

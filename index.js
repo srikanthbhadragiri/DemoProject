@@ -14,6 +14,10 @@ app.get('/demo1', (req, res) => {
   res.sendFile(path.join(__dirname + '/dist/sample1.html'))
 });
 
+app.get('/countries', (req, res) => {
+  res.sendFile(path.join(__dirname + '/dist/sample2.html'))
+});
+
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT);
