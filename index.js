@@ -18,8 +18,8 @@ app.get('/countries', (req, res) => {
   res.sendFile(path.join(__dirname + '/dist/sample2.html'))
 });
 
-app.get('/img/marioq.png', (req, res) => {
-  res.sendFile(path.join(__dirname + '/img/marioq.png'))
+app.get('/img/sri.jpg', (req, res) => {
+  res.sendFile(path.join(__dirname + '/img/sri.jpg'))
 });
 
 const PORT = process.env.PORT || 5000;
