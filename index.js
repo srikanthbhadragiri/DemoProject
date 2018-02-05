@@ -36,9 +36,31 @@ app.get('/styles.css', (req, res) => {
   res.sendFile(path.join(__dirname + '/assets/css/styles.css'))
 });
 
-// app.get('/bootstrap.min.css', (req, res) => {
-//   res.sendFile(path.join(__dirname + '/assets/plugins/bootstraps/js/bootstrap.min.js'))
-// });
+app.get('/jquery-3.2.1.min.js', (req, res) => {
+  res.sendFile(path.join(__dirname + '/assets/plugins/jquery-3.2.1.min.js'))
+});
+
+app.get('/popper.min.js', (req, res) => {
+  res.sendFile(path.join(__dirname + '/assets/plugins/popper.min.js'))
+});
+
+app.get('/back-to-top.js', (req, res) => {
+  res.sendFile(path.join(__dirname + '/assets/plugins/back-to-top.js'))
+});
+
+app.get('/jquery.scrollTo.min.js', (req, res) => {
+  res.sendFile(path.join(__dirname + '/assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js'))
+});
+
+app.get('/bootstrap.min.js', (req, res) => {
+  res.sendFile(path.join(__dirname + '/assets/plugins/bootstraps/js/bootstrap.min.js'))
+});
+
+app.get('/main.js', (req, res) => {
+  res.sendFile(path.join(__dirname + '/assets/js/main.js'))
+});
+
+
 //
 // bootstrap.min.css
 // styles.css
